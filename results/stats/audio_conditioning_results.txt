@@ -1,0 +1,20 @@
+AUDIO-CONDITIONING VARIANCE DECOMPOSITION — Stage 13 (TRAIN only)
+
+[warm] TRAIN n=419, audio-joined n=336 (80%)
+  usable audio features: 78/80
+  rendered-curve variance explained by SOURCE audio (out-of-fold):
+    real pairing   R^2 = +0.051
+    permuted (null) R^2 = -0.119   <- must be ~0
+  raw human dispersion       : 4.50 dB
+  residual (genuine-disagreement) dispersion: 4.38 dB
+  target-convergence: median per-feature output/input variance ratio = 1.05 (diverge on output)
+
+[bright] TRAIN n=398, audio-joined n=322 (81%)
+  usable audio features: 78/80
+  rendered-curve variance explained by SOURCE audio (out-of-fold):
+    real pairing   R^2 = -0.061
+    permuted (null) R^2 = -0.115   <- must be ~0
+  raw human dispersion       : 4.14 dB
+  residual (genuine-disagreement) dispersion: 4.27 dB
+  target-convergence: median per-feature output/input variance ratio = 1.24 (diverge on output)
+

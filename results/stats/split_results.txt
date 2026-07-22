@@ -1,0 +1,16 @@
+SPLIT CONSTRUCTION — Stage 2
+raw sha256      : CC43858680115070FFDFA41A1158FCA1344DB2E0096BA73FE68990E90A284AF1 (verified)
+seed            : 42   test fraction: 0.2   floor: 20
+funnel          : 1700 rows -> bad 0 | blocklist 183 | duplicates dropped 44 -> 1473 clean entries
+
+CONFIRMATORY SPLITS (above-floor descriptors):
+  bright     train  398   eval   99
+  warm       train  419   eval  105
+  TOTAL      train  817   eval  204
+
+TAIL GENERALIZATION SET: 452 entries across 323 below-floor descriptors (never used for training)
+
+HASH LOCKS:
+  train.jsonl : AAD2F8FD4AD55BF5CEA6AC22E44F77A32F6146BAAE0415DF48F43BB85A4B3AE7
+  eval_set.jsonl : C2A7514C49075781B9D8AB61981887084D5209B027550FBEBF5998D9B8A6E9F0
+  tail_eval.jsonl : 82FD90F440667FF1B70C57C1DD48EF823F4318DE47B41F586205CE46D57D7A74

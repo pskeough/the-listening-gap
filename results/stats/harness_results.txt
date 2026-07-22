@@ -1,0 +1,10 @@
+LLM HARNESS — Stage 5 (D-022 slate)
+grid cells: 2092   completed ok: 2003   failed after 3 parse attempts: 1
+arm_b rows: 756   arm_c rows: 755
+ok cells per model:
+  anthropic/claude-haiku-4.5: 334
+  deepseek/deepseek-v4-flash: 334
+  google/gemini-3.5-flash: 334
+  openai/gpt-5.4-mini: 334
+  qwen/qwen3-235b-a22b-2507: 334
+  z-ai/glm-4.7-flash: 333

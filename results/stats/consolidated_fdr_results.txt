@@ -1,0 +1,56 @@
+CONSOLIDATED BH-FDR — 53 tests across stages 7/10/11 (alpha=0.05); 37 survive
+
+source      test                                                raw p       q           survives
+S7:T1.3C    vs C_AGG HRP (paired, n=132)                        2.109e-21   1.118e-19   YES
+S7:T5       family divergence, B HRP (6 models)                 6.800e-21   1.802e-19   YES
+S7:T2       B vs C centrality LSD (paired, n=396)               9.207e-18   1.627e-16   YES
+S7:T1.1B    vs C HRP (paired, n=396)                            1.068e-16   1.240e-15   YES
+S10:B       school GOF gemini-3.5-flash warm                    1.170e-16   1.240e-15   YES
+S10:C       school GOF gemini-3.5-flash bright                  1.770e-16   1.564e-15   YES
+S10:B       school GOF claude-haiku-4.5 bright                  4.200e-15   2.782e-14   YES
+S10:B       school GOF gpt-5.4-mini bright                      4.200e-15   2.782e-14   YES
+S10:C       school GOF gpt-5.4-mini warm                        5.430e-14   3.198e-13   YES
+S10:B       school GOF qwen3-235b-a22b-2507 bright              8.980e-14   4.759e-13   YES
+S10:C       school GOF deepseek-v4-flash bright                 1.240e-12   5.975e-12   YES
+S10:C       school GOF gpt-5.4-mini bright                      1.450e-10   6.404e-10   YES
+S10:B       school GOF qwen3-235b-a22b-2507 warm                1.680e-10   6.849e-10   YES
+S10:B       school GOF gpt-5.4-mini warm                        1.800e-09   6.814e-09   YES
+S7:T1.2B    vs C_AGG HRP (paired, n=132)                        7.759e-09   2.742e-08   YES
+S10:C       school GOF claude-haiku-4.5 warm                    3.800e-07   1.259e-06   YES
+S10:C       school GOF claude-haiku-4.5 bright                  1.520e-06   4.739e-06   YES
+S10:B       school GOF deepseek-v4-flash bright                 1.830e-06   5.388e-06   YES
+S10:B       school GOF gemini-3.5-flash bright                  4.180e-06   1.166e-05   YES
+S10:C       school GOF deepseek-v4-flash warm                   5.000e-06   1.325e-05   YES
+S10:C       school GOF qwen3-235b-a22b-2507 warm                1.240e-05   3.130e-05   YES
+S7:T6       prompt sensitivity, B HRP (3 variants)              1.428e-05   3.440e-05   YES
+S10:C       school GOF glm-4.7-flash bright                     2.610e-05   6.014e-05   YES
+S7:T4       B vs C tail LSD (paired, n=359)                     9.429e-05   2.082e-04   YES
+S11         tail A' vs E                                        1.254e-04   2.658e-04   YES
+S11         tail FLAT vs E                                      2.132e-04   4.346e-04   YES
+S11         tail A vs C                                         2.259e-04   4.434e-04   YES
+S10:B       school GOF claude-haiku-4.5 warm                    3.750e-04   7.098e-04   YES
+S10:B       school GOF glm-4.7-flash bright                     4.150e-04   7.584e-04   YES
+S11         tail C vs C_AGG                                     5.257e-04   9.287e-04   YES
+S11         tail A' vs C                                        7.276e-04   1.244e-03   YES
+S11         tail FLAT vs C                                      1.109e-03   1.837e-03   YES
+S10:C       school GOF qwen3-235b-a22b-2507 bright              2.470e-03   3.967e-03   YES
+S11         tail A vs E                                         2.669e-03   4.161e-03   YES
+S10:C       school GOF gemini-3.5-flash warm                    1.350e-02   2.044e-02   YES
+S11         tail E vs C                                         1.812e-02   2.621e-02   YES
+S10:B       school GOF deepseek-v4-flash warm                   1.830e-02   2.621e-02   YES
+S10:C       school GOF glm-4.7-flash warm                       3.820e-02   5.206e-02   no
+S10:B       school GOF glm-4.7-flash warm                       3.900e-02   5.206e-02   no
+S7:T3       B vs C energy distance (paired groups, n=36)        3.929e-02   5.206e-02   no
+S11         tail B vs C                                         6.680e-02   8.635e-02   no
+S11         tail A vs C_AGG                                     9.326e-02   1.177e-01   no
+S11         tail A vs B                                         1.053e-01   1.298e-01   no
+S11         tail FLAT vs A                                      1.294e-01   1.559e-01   no
+S11         tail A' vs A                                        1.901e-01   2.239e-01   no
+S11         tail A' vs C_AGG                                    3.423e-01   3.944e-01   no
+S11         tail A' vs B                                        3.575e-01   4.031e-01   no
+S11         tail FLAT vs C_AGG                                  4.352e-01   4.805e-01   no
+S11         tail FLAT vs B                                      4.616e-01   4.993e-01   no
+S11         tail E vs C_AGG                                     5.124e-01   5.431e-01   no
+S11         tail E vs B                                         6.375e-01   6.625e-01   no
+S11         tail FLAT vs A'                                     6.547e-01   6.673e-01   no
+S11         tail B vs C_AGG                                     7.910e-01   7.910e-01   no

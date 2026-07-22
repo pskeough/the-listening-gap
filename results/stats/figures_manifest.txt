@@ -1,0 +1,18 @@
+FIGURES — Stage 14 (viz only, derived from metrics.jsonl + frozen splits)
+
+  fig1_hrp_by_arm.png
+  fig2_rag_effect.png
+  fig3_band_anatomy.png
+  fig4_dispersion.png
+  fig5_response_overlay.png
+
+fig1 median HRP by arm:
+  FLAT   32.2
+  A      2.4
+  A'     2.4
+  E      3.8
+  B      3.0
+  C      10.5
+  C_AGG  0.0
+
+Arms D/F: ABSENT (LoRA pending) — rerun to fold in

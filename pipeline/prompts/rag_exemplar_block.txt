@@ -1,0 +1,7 @@
+Here are {n} real settings that human audio engineers created for
+"{descriptor}" (from a crowdsourced dataset). Use them as grounding evidence
+for your own answer — you may follow them, average them, or deviate where you
+judge best:
+
+{exemplars}
+

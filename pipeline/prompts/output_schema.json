@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SonicEQ 5-band parametric output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "low_shelf_gain", "low_shelf_freq",
+    "band1_gain", "band1_freq", "band1_q",
+    "band2_gain", "band2_freq", "band2_q",
+    "band3_gain", "band3_freq", "band3_q",
+    "high_shelf_gain", "high_shelf_freq"
+  ],
+  "properties": {
+    "low_shelf_gain":  {"type": "number", "minimum": -12, "maximum": 12},
+    "low_shelf_freq":  {"type": "number", "exclusiveMinimum": 0, "maximum": 20000},
+    "band1_gain":      {"type": "number", "minimum": -12, "maximum": 12},
+    "band1_freq":      {"type": "number", "exclusiveMinimum": 0, "maximum": 20000},
+    "band1_q":         {"type": "number", "minimum": 0.1, "maximum": 10},
+    "band2_gain":      {"type": "number", "minimum": -12, "maximum": 12},
+    "band2_freq":      {"type": "number", "exclusiveMinimum": 0, "maximum": 20000},
+    "band2_q":         {"type": "number", "minimum": 0.1, "maximum": 10},
+    "band3_gain":      {"type": "number", "minimum": -12, "maximum": 12},
+    "band3_freq":      {"type": "number", "exclusiveMinimum": 0, "maximum": 20000},
+    "band3_q":         {"type": "number", "minimum": 0.1, "maximum": 10},
+    "high_shelf_gain": {"type": "number", "minimum": -12, "maximum": 12},
+    "high_shelf_freq": {"type": "number", "exclusiveMinimum": 0, "maximum": 20000}
+  }
+}

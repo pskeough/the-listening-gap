@@ -1,0 +1,17 @@
+AUDIO-CONDITIONING INTERPRETATION — Stage 13
+
+[warm] Source audio explains R^2=0.05 of rendered-curve variance out-of-fold (permutation null -0.12; net signal +0.17).
+  -> Of the 4.50 dB raw human dispersion, the genuine person-to-person residual after removing source conditioning is ~4.38 dB.
+  -> Output/input variance ratio 1.05: humans do NOT converge on a common acoustic target across varied sources.
+[bright] Source audio explains R^2=-0.06 of rendered-curve variance out-of-fold (permutation null -0.11; net signal +0.05).
+  -> Of the 4.14 dB raw human dispersion, the genuine person-to-person residual after removing source conditioning is ~4.27 dB.
+  -> Output/input variance ratio 1.24: humans do NOT converge on a common acoustic target across varied sources.
+
+Model cloud dispersions for comparison: {B:0.74dB, C:0.92dB, C_AGG:0.16dB}
+CLAIM DISCIPLINE: if source R^2 is small and the permutation null is
+~0, the dispersion headline stands essentially unchanged and is now
+bulletproofed against the 'it's just audio conditioning' objection.
+If R^2 is large, the headline must be restated as models matching the
+MARGINAL human distribution while being blind to the CONDITIONAL task,
+and the model-vs-human dispersion gap must be quoted against the
+residual dispersion, not the raw dispersion. Report whichever is true.

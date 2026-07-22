@@ -1,0 +1,24 @@
+STATS BATTERY — Stage 7
+
+PER-ARM HRP (median [bootstrap 95% CI]):
+  A   n=   2 median    2.4 (too few for CI)
+  A'  n=   2 median    2.4 (too few for CI)
+  B   n= 396 median    3.0 [3.0, 3.8]
+  C   n= 396 median   10.5 [8.1, 13.3]
+  C_AGG n= 132 median    0.0 [0.0, 4.8]
+  E   n=   2 median    3.8 (too few for CI)
+
+HUMAN ENERGY-DISTANCE REFERENCE (self-match floor for T3):
+  human split-half energy [warm]: -0.034 dB
+  human split-half energy [bright]: 0.058 dB
+
+TEST TABLE (BH-FDR alpha=0.05, m=8 tests — ALL tests shown):
+id  test                                              raw p       q           survives detail
+T1.1B vs C HRP (paired, n=396)                        1.068e-16   2.136e-16   YES      median B=3.0 C=10.5 delta=+0.379
+T1.2B vs C_AGG HRP (paired, n=132)                    7.759e-09   1.241e-08   YES      median B=3.0 C_AGG=0.0 delta=-0.337
+T1.3C vs C_AGG HRP (paired, n=132)                    2.109e-21   1.687e-20   YES      median C=14.2 C_AGG=0.0 delta=-0.731
+T2  B vs C centrality LSD (paired, n=396)             9.207e-18   2.455e-17   YES      median B=3.929 C=4.103 dB
+T3  B vs C energy distance (paired groups, n=36)      3.929e-02   3.929e-02   YES      median B=2.235 C=2.477 dB
+T4  B vs C tail LSD (paired, n=359)                   9.429e-05   1.078e-04   YES      median B=6.030 C=6.183 dB delta=+0.096
+T5  family divergence, B HRP (6 models)               6.800e-21   2.720e-20   YES      claude-haiku-4.5:2.0 | deepseek-v4-flash:3.0 | gemini-3.5-flash:2.9 | gpt-5.4-mini:3.0 | qwen3-235b-a22b-2507:3.0 | glm-4.7-flash:18.6
+T6  prompt sensitivity, B HRP (3 variants)            1.428e-05   1.905e-05   YES      p1_minimal:3.0 | p2_persona:6.9 | p3_format_demo:3.0

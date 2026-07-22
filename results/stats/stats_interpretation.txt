@@ -1,0 +1,14 @@
+STATS INTERPRETATION — Stage 7
+
+1. Unit-level analysis with descriptor as stratum is the pre-declared
+   D-018 fallback (2 descriptors killed descriptor-paired tests).
+2. The full test table is reported including non-survivors; a null on
+   T6 (prompt sensitivity) is EXPECTED and evidence of robustness.
+3. T3 magnitudes are interpretable only against the human split-half
+   reference: an arm whose energy distance approaches the human
+   self-match floor matches the human distribution about as well as
+   humans match themselves.
+4. HRP CIs are bootstrap-on-units; units within a model share draws,
+   so CIs are anti-conservative to that extent — stated in methods.
+5. Claim discipline: Arm A/A' HRP is reported as context (consensus
+   anchor), never as a contest winner (D-005).

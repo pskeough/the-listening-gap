@@ -1,0 +1,8 @@
+Provide parametric equalizer settings that make audio sound "{descriptor}".
+
+Use a 5-band parametric EQ: low shelf, three peaking bands, high shelf.
+Respond with ONLY a JSON object, no other text, exactly these keys:
+
+{"low_shelf_gain": <dB>, "low_shelf_freq": <Hz>, "band1_gain": <dB>, "band1_freq": <Hz>, "band1_q": <Q>, "band2_gain": <dB>, "band2_freq": <Hz>, "band2_q": <Q>, "band3_gain": <dB>, "band3_freq": <Hz>, "band3_q": <Q>, "high_shelf_gain": <dB>, "high_shelf_freq": <Hz>}
+
+Gains in dB (-12 to +12), frequencies in Hz (20 to 20000), Q from 0.1 to 10.

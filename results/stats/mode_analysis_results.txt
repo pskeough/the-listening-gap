@@ -1,0 +1,62 @@
+MODE-AWARE MODEL EVALUATION — Stage 10
+
+[warm] human school shares: m0[16% lo+3.3 hi-2.9]  m1[53% lo+0.0 hi-3.1]  m2[31% lo+1.2 hi-0.3]
+[bright] human school shares: m0[18% lo-2.9 hi+5.2]  m1[25% lo-0.4 hi+5.4]  m2[30% lo-6.3 hi+4.4]  m3[27% lo-0.3 hi+4.5]
+
+A. SCHOOL ASSIGNMENT (model curve -> nearest GMM mode; eval descriptors):
+  [B] claude-haiku-4.5             bright  n= 33 modes 0/0/32/1  (human 18%/25%/30%/27%)  chi2 p=4.20e-15
+  [B] claude-haiku-4.5             warm    n= 33 modes 0/13/20  (human 16%/53%/31%)  chi2 p=3.75e-04
+  [B] deepseek-v4-flash            bright  n= 33 modes 0/0/22/11  (human 18%/25%/30%/27%)  chi2 p=1.83e-06
+  [B] deepseek-v4-flash            warm    n= 33 modes 0/24/9  (human 16%/53%/31%)  chi2 p=1.83e-02
+  [B] gemini-3.5-flash             bright  n= 33 modes 0/0/21/12  (human 18%/25%/30%/27%)  chi2 p=4.18e-06
+  [B] gemini-3.5-flash             warm    n= 33 modes 0/0/33  (human 16%/53%/31%)  chi2 p=1.17e-16
+  [B] gpt-5.4-mini                 bright  n= 33 modes 0/0/32/1  (human 18%/25%/30%/27%)  chi2 p=4.20e-15
+  [B] gpt-5.4-mini                 warm    n= 33 modes 0/6/27  (human 16%/53%/31%)  chi2 p=1.80e-09
+  [B] qwen3-235b-a22b-2507         bright  n= 33 modes 0/1/31/1  (human 18%/25%/30%/27%)  chi2 p=8.98e-14
+  [B] qwen3-235b-a22b-2507         warm    n= 33 modes 0/5/28  (human 16%/53%/31%)  chi2 p=1.68e-10
+  [B] glm-4.7-flash                bright  n= 33 modes 0/3/19/11  (human 18%/25%/30%/27%)  chi2 p=4.15e-04
+  [B] glm-4.7-flash                warm    n= 33 modes 0/20/13  (human 16%/53%/31%)  chi2 p=3.90e-02
+  [C] claude-haiku-4.5             bright  n= 33 modes 0/19/14/0  (human 18%/25%/30%/27%)  chi2 p=1.52e-06
+  [C] claude-haiku-4.5             warm    n= 33 modes 0/33/0  (human 16%/53%/31%)  chi2 p=3.80e-07
+  [C] deepseek-v4-flash            bright  n= 33 modes 0/0/30/3  (human 18%/25%/30%/27%)  chi2 p=1.24e-12
+  [C] deepseek-v4-flash            warm    n= 33 modes 0/10/23  (human 16%/53%/31%)  chi2 p=5.00e-06
+  [C] gemini-3.5-flash             bright  n= 33 modes 0/0/33/0  (human 18%/25%/30%/27%)  chi2 p=1.77e-16
+  [C] gemini-3.5-flash             warm    n= 33 modes 0/17/16  (human 16%/53%/31%)  chi2 p=1.35e-02
+  [C] gpt-5.4-mini                 bright  n= 33 modes 0/5/28/0  (human 18%/25%/30%/27%)  chi2 p=1.45e-10
+  [C] gpt-5.4-mini                 warm    n= 33 modes 0/2/31  (human 16%/53%/31%)  chi2 p=5.43e-14
+  [C] qwen3-235b-a22b-2507         bright  n= 33 modes 0/10/18/5  (human 18%/25%/30%/27%)  chi2 p=2.47e-03
+  [C] qwen3-235b-a22b-2507         warm    n= 33 modes 0/31/2  (human 16%/53%/31%)  chi2 p=1.24e-05
+  [C] glm-4.7-flash                bright  n= 33 modes 1/8/22/2  (human 18%/25%/30%/27%)  chi2 p=2.61e-05
+  [C] glm-4.7-flash                warm    n= 33 modes 1/24/8  (human 16%/53%/31%)  chi2 p=3.82e-02
+  [C_AGG] claude-haiku-4.5             bright  n= 11 modes 0/0/11/0  (human 18%/25%/30%/27%)  n too small for GOF
+  [C_AGG] claude-haiku-4.5             warm    n= 11 modes 0/0/11  (human 16%/53%/31%)  n too small for GOF
+  [C_AGG] deepseek-v4-flash            bright  n= 11 modes 0/0/9/2  (human 18%/25%/30%/27%)  n too small for GOF
+  [C_AGG] deepseek-v4-flash            warm    n= 11 modes 0/0/11  (human 16%/53%/31%)  n too small for GOF
+  [C_AGG] gemini-3.5-flash             bright  n= 11 modes 0/0/11/0  (human 18%/25%/30%/27%)  n too small for GOF
+  [C_AGG] gemini-3.5-flash             warm    n= 11 modes 0/0/11  (human 16%/53%/31%)  n too small for GOF
+  [C_AGG] gpt-5.4-mini                 bright  n= 11 modes 0/0/11/0  (human 18%/25%/30%/27%)  n too small for GOF
+  [C_AGG] gpt-5.4-mini                 warm    n= 11 modes 0/0/11  (human 16%/53%/31%)  n too small for GOF
+  [C_AGG] qwen3-235b-a22b-2507         bright  n= 11 modes 0/0/11/0  (human 18%/25%/30%/27%)  n too small for GOF
+  [C_AGG] qwen3-235b-a22b-2507         warm    n= 11 modes 0/0/11  (human 16%/53%/31%)  n too small for GOF
+  [C_AGG] glm-4.7-flash                bright  n= 11 modes 0/0/8/3  (human 18%/25%/30%/27%)  n too small for GOF
+  [C_AGG] glm-4.7-flash                warm    n= 11 modes 0/0/11  (human 16%/53%/31%)  n too small for GOF
+  [D] no data (arm file absent)
+  [F] no data (arm file absent)
+
+B. CONTEXT-PULL (0=ignores provided context, 1=fully defers):
+  [C] claude-haiku-4.5             median pull +0.87  (n=66)
+  [C] deepseek-v4-flash            median pull +0.51  (n=66)
+  [C] gemini-3.5-flash             median pull +0.64  (n=66)
+  [C] gpt-5.4-mini                 median pull +0.75  (n=66)
+  [C] qwen3-235b-a22b-2507         median pull +0.83  (n=66)
+  [C] glm-4.7-flash                median pull +0.76  (n=66)
+  [C_AGG] claude-haiku-4.5             median pull +1.00  (n=22)
+  [C_AGG] deepseek-v4-flash            median pull +1.00  (n=22)
+  [C_AGG] gemini-3.5-flash             median pull +1.00  (n=22)
+  [C_AGG] gpt-5.4-mini                 median pull +1.01  (n=22)
+  [C_AGG] qwen3-235b-a22b-2507         median pull +1.00  (n=22)
+  [C_AGG] glm-4.7-flash                median pull +1.00  (n=22)
+
+C. BAND-ERROR ANATOMY (B greedy signed error vs TRAIN centroid, dB):
+  [warm] low(20-150):+2.07  lowmid(150-600):-0.27  mid(0.6-2k):-1.46  highmid(2-6k):+0.56  high(6-20k):+0.85
+  [bright] low(20-150):+1.06  lowmid(150-600):+0.57  mid(0.6-2k):+0.08  highmid(2-6k):-2.23  high(6-20k):-1.72

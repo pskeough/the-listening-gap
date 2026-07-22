@@ -1,0 +1,105 @@
+SAFE-DB EQUALISER AUDIT — Stage 1
+source file : SAFEEqualiserUserData.csv
+sha256      : CC43858680115070FFDFA41A1158FCA1344DB2E0096BA73FE68990E90A284AF1  (matches PROVENANCE.md)
+
+CLEANING FUNNEL (fixed a-priori rules only; 2-SD outlier step is
+deliberately deferred to TRAIN-only computation at Stage 2+):
+  rows in file                     : 1700
+  - wrong column count             : 0
+  - empty descriptor               : 0
+  - unparseable numeric params     : 0
+  - |gain| > 15 dB (any band)      : 0
+  - freq <= 0 Hz (any band)        : 0
+  - junk descriptor blocklist      : 181   (blocklist: ['test'])
+  = USABLE ENTRIES                 : 1519
+
+DISTINCT NORMALIZED DESCRIPTORS: 327
+Top 30 descriptors:
+  warm                 532
+  bright               504
+  clear                8
+  thin                 7
+  boomy                7
+  re27                 7
+  vocals               6
+  airy                 6
+  tinny                5
+  muddy                5
+  deep                 5
+  brighter             5
+  full                 5
+  radio                4
+  boxy                 4
+  nice                 4
+  harsh                4
+  clicky               4
+  jammy                4
+  default              4
+  guitar               4
+  bassy                3
+  bastard              3
+  hollow               3
+  dark                 3
+  box                  3
+  phone                3
+  tele (bridge pu) bright 1 3
+  sharp                3
+  fuller               3
+
+FLOOR ANALYSIS (floor = 20):
+      >= 20 (floor) : 2 descriptors
+    10 - 19         : 0 descriptors
+     5 - 9          : 11 descriptors
+     2 - 4          : 69 descriptors
+  singleton         : 245 descriptors
+  descriptors above floor: ['warm (532)', 'bright (504)']
+  long-tail entries (below floor, candidate generalization set): 483
+
+PER-PARAMETER STATS FOR ABOVE-FLOOR DESCRIPTORS (mean / SD / min / max):
+  [warm] n=532
+    low_shelf_gain       -0.06 /     6.74 /    -12.00 /     12.00
+    low_shelf_freq      142.66 /    87.12 /     22.00 /   1000.00
+    band1_gain            3.76 /     5.68 /    -12.00 /     12.00
+    band1_freq          368.07 /   294.49 /     82.00 /   3900.00
+    band1_q               0.92 /     0.77 /      0.16 /     10.00
+    band2_gain           -0.31 /     5.13 /    -12.00 /     12.00
+    band2_freq          936.12 /   497.79 /    180.00 /   4700.00
+    band2_q               0.79 /     0.57 /      0.12 /     10.00
+    band3_gain           -0.82 /     4.22 /    -12.00 /     12.00
+    band3_freq         2980.90 /  1134.54 /    220.00 /  10000.00
+    band3_q               0.86 /     0.67 /      0.10 /      9.38
+    high_shelf_gain      -2.65 /     4.25 /    -12.00 /     12.00
+    high_shelf_freq    6949.57 /  2315.61 /    580.00 /  16322.80
+  [bright] n=504
+    low_shelf_gain       -3.07 /     5.88 /    -12.00 /     12.00
+    low_shelf_freq      153.59 /   134.73 /     22.00 /   1000.00
+    band1_gain           -0.48 /     4.79 /    -12.00 /     12.00
+    band1_freq          501.98 /   587.36 /     82.00 /   3900.00
+    band1_q               0.99 /     0.90 /      0.10 /     10.00
+    band2_gain            1.28 /     4.97 /    -12.00 /     12.00
+    band2_freq         1099.54 /   710.36 /    180.00 /   4700.00
+    band2_q               0.83 /     0.42 /      0.10 /      5.17
+    band3_gain            4.52 /     4.29 /    -12.00 /     12.00
+    band3_freq         3174.18 /  1375.77 /    220.00 /  10000.00
+    band3_q               0.91 /     0.81 /      0.10 /     10.00
+    high_shelf_gain       3.94 /     4.73 /    -12.00 /     12.00
+    high_shelf_freq    6206.31 /  2808.98 /    580.00 /  18027.35
+
+DUPLICATE ANALYSIS (same descriptor + same IP + identical 13 params):
+  duplicate groups : 37
+  redundant entries: 44  (2.9% of usable)
+  NOTE: surfaced only. Whether to drop is a Stage 2 decision -> DECISION_LOG.
+
+SUSPICIOUS DESCRIPTORS FOR HUMAN REVIEW (non-alphabetic or <= 2 chars —
+surfaced, not dropped; add to blocklist only via DECISION_LOG entry):
+  ['1', 'my']
+
+METADATA PROFILE (top 8 values per column; '<blank>' = empty):
+  genre       : 62 distinct | <blank> (461), Reggae (145), reggae (63), jazz2 (39), jazz4 (38), jazz1 (36), jazz5 (36), metal1 (36)
+  instrument  : 119 distinct | <blank> (724), guitar (123), jazz1 (34), metal1 (34), jazz2 (34), metal2 (33), metal3 (33), jazz3 (33)
+  location    : 28 distinct | <blank> (844), Birmingham, UK (201), birmingham (104), birmingham uk (72), Birmingham (68), birminham uk (41), uk (27), United Kingdom (22)
+  experience  : 32 distinct | <blank> (846), 3 years (90), 0 years (85), 5 (67), 7 years (54), 4 years (41), 6 (41), 5 years (37)
+  age         : 24 distinct | <blank> (825), 25 (108), 24 (87), 20 (62), 22 (60), 26 (60), 21 (58), 23 (41)
+  nationality : 15 distinct | <blank> (870), English (289), english (153), Arabic (68), Chinese (45), Polish (24), French (19), portuguese (17)
+
+END OF AUDIT — every number above derives from the provenanced file.

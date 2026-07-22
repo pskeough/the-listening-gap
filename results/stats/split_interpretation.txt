@@ -1,0 +1,14 @@
+SPLIT INTERPRETATION — Stage 2
+
+1. Cleaning applied the affirmed D-019 rules on top of the audit funnel:
+   blocklist ['1', 'my', 'test'] and exact-duplicate removal (44 dropped, matching the audit's 44-duplicate estimate within
+   rounding of the key definition).
+2. The eval_set (204 entries) is now FROZEN. It is read by
+   pipeline/06_metrics.py and nothing else. Any script importing it
+   for training purposes is a protocol violation.
+3. The tail set (452 entries) is evaluation-only generalization
+   data: per-descriptor stats are meaningless there (max n < 20);
+   it is scored only in aggregate (design D-018 consequence c).
+4. Reproducibility: rerunning this script reproduces byte-identical
+   files (single seeded shuffle, sorted iteration); verify against the
+   .sha256 locks.

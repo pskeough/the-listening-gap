@@ -1,0 +1,10 @@
+ARM E INTERPRETATION — Stage 4c
+
+1. With two distinct training inputs the MLP necessarily learns two
+   conditional means; on eval descriptors Arm E is expected to track
+   Arm A closely. Its informative behavior is on the tail, where unseen
+   descriptor embeddings land off-anchor and the network extrapolates.
+2. Cross-seed spread is receipted above; small spread = the fit is
+   data-determined, not initialization-determined.
+3. Model scale note for the product narrative: MiniLM (~90 MB, ONNX) +
+   a (64,) MLP head (~KB) — runs offline, no API.

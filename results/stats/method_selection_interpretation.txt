@@ -1,0 +1,9 @@
+METHOD SELECTION INTERPRETATION — Stage 11
+
+1. Section B/C answer the product question directly: the app should
+   ship whichever method wins the tail at acceptable runtime cost,
+   with FLAT as the 'is it better than nothing' gate.
+2. All pairwise p-values here are RAW; they join the consolidated
+   BH-FDR battery before any enters the manuscript.
+3. LLM tail values use greedy P1 medians across models — the cheap
+   deployable configuration, not best-case sampling.

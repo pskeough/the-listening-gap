@@ -1,0 +1,66 @@
+METHOD SELECTION — Stage 11
+
+A. KNOWN DESCRIPTORS (eval split; centrality LSD dB / HRP):
+  A      n=   2  LSD  3.668  HRP    2.4
+  A'     n=   2  LSD  3.668  HRP    2.4
+  E      n=   2  LSD  3.756  HRP    3.8
+  FLAT   n=   2  LSD  4.479  HRP   32.2
+  B      n= 396  LSD  3.929  HRP    3.0
+  C      n= 396  LSD  4.103  HRP   10.5
+  C_AGG  n= 132  LSD  3.713  HRP    0.0
+
+B. TAIL (unseen descriptors; median LSD dB; lower = closer to humans):
+  A      n_desc=323  median LSD  5.422
+  A'     n_desc=323  median LSD  5.747
+  FLAT   n_desc=323  median LSD  5.747
+  E      n_desc=323  median LSD  5.831
+  C_AGG  n_desc= 60  median LSD  5.938
+  B      n_desc= 60  median LSD  6.117
+  C      n_desc= 60  median LSD  6.285
+
+C. HEAD-TO-HEAD on 60 common tail descriptors (win % = row beats column; paired Wilcoxon p):
+              FLAT        A'         A         E         B         C     C_AGG
+FLAT            --        2%       42%       70%       52%       67%       57%
+A'              2%        --       43%       72%       53%       68%       57%
+A              58%       57%        --       63%       58%       70%       58%
+E              30%       28%       37%        --       52%       62%       47%
+B              48%       47%       42%       48%        --       60%       52%
+C              33%       32%       30%       38%       40%        --       30%
+C_AGG          43%       43%       42%       53%       48%       70%        --
+
+  pairwise Wilcoxon (raw p — feeds consolidated FDR at write-up):
+    A' vs E          p=1.254e-04  median diff -0.275 dB
+    FLAT vs E        p=2.132e-04  median diff -0.275 dB
+    A vs C           p=2.259e-04  median diff -0.437 dB
+    C vs C_AGG       p=5.257e-04  median diff +0.347 dB
+    A' vs C          p=7.276e-04  median diff -0.549 dB
+    FLAT vs C        p=1.109e-03  median diff -0.549 dB
+    A vs E           p=2.669e-03  median diff -0.163 dB
+    E vs C           p=1.812e-02  median diff -0.273 dB
+    B vs C           p=6.680e-02  median diff -0.169 dB
+    A vs C_AGG       p=9.326e-02  median diff -0.090 dB
+    A vs B           p=1.053e-01  median diff -0.268 dB
+    FLAT vs A        p=1.294e-01  median diff -0.112 dB
+    A' vs A          p=1.901e-01  median diff -0.112 dB
+    A' vs C_AGG      p=3.423e-01  median diff -0.202 dB
+    A' vs B          p=3.575e-01  median diff -0.380 dB
+    FLAT vs C_AGG    p=4.352e-01  median diff -0.202 dB
+    FLAT vs B        p=4.616e-01  median diff -0.380 dB
+    E vs C_AGG       p=5.124e-01  median diff +0.074 dB
+    E vs B           p=6.375e-01  median diff -0.105 dB
+    FLAT vs A'       p=6.547e-01  median diff +0.000 dB
+    B vs C_AGG       p=7.910e-01  median diff +0.179 dB
+
+D. SEMANTIC-PROXIMITY GRADIENT (Spearman rho: proximity-to-anchors vs LSD):
+  FLAT   rho=+0.138 (p=1.32e-02, n=323)
+  A'     rho=+0.132 (p=1.80e-02, n=323)
+  A      rho=+0.089 (p=1.10e-01, n=323)
+  E      rho=+0.165 (p=2.96e-03, n=323)
+  B      rho=+0.011 (p=9.35e-01, n=60)
+  C      rho=+0.003 (p=9.79e-01, n=60)
+  C_AGG  rho=-0.064 (p=6.29e-01, n=60)
+
+NOTE: negative rho = arm does BETTER near the anchors (higher
+proximity -> lower LSD): corpus-bound knowledge. rho ~ 0 with a
+competitive median = knowledge independent of the corpus's
+semantic neighborhood.

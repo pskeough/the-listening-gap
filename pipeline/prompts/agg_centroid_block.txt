@@ -1,0 +1,7 @@
+The following is the AGGREGATE consensus parametric EQ setting for
+"{descriptor}", computed as the outlier-filtered mean of {n} human audio
+engineers' settings from a crowdsourced dataset. Use it as grounding evidence
+for your own answer — you may follow it or deviate where you judge best:
+
+{centroid}
+

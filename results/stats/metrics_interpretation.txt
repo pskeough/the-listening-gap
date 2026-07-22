@@ -1,0 +1,12 @@
+METRICS INTERPRETATION — Stage 6
+
+1. This script is the frozen eval sets' only reader (design §5). Any
+   other consumer is a protocol violation.
+2. HRP interpretation guard (D-005): Arm A sits near HRP 0 BY
+   CONSTRUCTION (consensus anchor). Claim-bearing contrasts are B/C/E
+   vs the human range and vs each other; A is context, not competitor.
+3. energy_dist rows exist only for groups with >=5 cloud samples;
+   point-estimate arms are structurally excluded there and compete on
+   centrality/HRP only — stated in methods, not hidden.
+4. Inferential statistics live in 07_stats.py; nothing here is a
+   significance claim.

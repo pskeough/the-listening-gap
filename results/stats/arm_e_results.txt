@@ -1,0 +1,5 @@
+ARM E (embedding->MLP) — Stage 4c
+train rows: 817 (distinct descriptors: ['bright', 'warm'])
+seeds: [0, 1, 2]  hidden: (64,)  targets: gains linear, freq/Q log10
+predictions: 325 descriptors (2 eval, 323 tail)
+cross-seed spread (target space): mean 0.08167, max 0.12734

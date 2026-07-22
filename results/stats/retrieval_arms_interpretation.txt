@@ -1,0 +1,12 @@
+RETRIEVAL ARMS INTERPRETATION — Stage 4
+
+1. On the confirmatory eval descriptors (warm/bright) Arm A is the own-
+   descriptor TRAIN centroid — the consensus anchor (HRP framing D-005).
+   A' converges toward A there because the descriptor directly matches its
+   profile word; the arms separate on the tail, where A interpolates the
+   warm-bright embedding axis and A' falls back to keyword hits or flat.
+2. A' emitted the deployed flat-EQ fallback on 312 descriptors — the
+   deployed system's honest behavior on vocabulary misses, reported not
+   hidden.
+3. Everything here consumed TRAIN only (hash-verified); the 2-SD filter is
+   fitted on TRAIN per design §5, closing the loop deferred since Stage 1.

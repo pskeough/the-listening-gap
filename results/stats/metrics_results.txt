@@ -1,0 +1,16 @@
+METRICS — Stage 6
+prediction units: 3303 (932 eval-scored, 2371 tail-scored)
+energy-distance groups (n>=5 samples): 84
+
+HRP by arm (eval descriptors; median [IQR] across units):
+  A   n=   2  median HRP    2.4  [IQR 0.0-4.8]
+  A'  n=   2  median HRP    2.4  [IQR 0.0-4.8]
+  B   n= 396  median HRP    3.0  [IQR 2.0-10.5]
+  C   n= 396  median HRP   10.5  [IQR 3.0-24.2]
+  C_AGG n= 132  median HRP    0.0  [IQR 0.0-4.8]
+  E   n=   2  median HRP    3.8  [IQR 1.0-6.7]
+  FLAT n=   2  median HRP   32.2  [IQR 20.0-44.4]
+
+Human reference: HRP is percentile vs leave-one-out human
+centrality; ~50 = typical human. Full distributions in metrics.jsonl.
+eval descriptors: {'bright': 99, 'warm': 105}

@@ -1,0 +1,17 @@
+RETRIEVAL ARMS — Stage 4
+
+anchor 'warm': train n=419, after 2-SD rejection n=330
+anchor 'bright': train n=398, after 2-SD rejection n=322
+
+A' profile centroids from TRAIN: {'warm': 419, 'bright': 398}
+A' profiles with zero TRAIN data (skipped): ['airy', 'muddy', 'presence', 'punchy']
+
+Arm A predictions : 325 (2 eval + 323 tail)
+Arm A' predictions: 325  (flat-fallback on 312 descriptors)
+
+Example tail similarity weights (Arm A):
+  '!st' -> {'bright': np.float64(0.14562794035284618), 'warm': np.float64(0.2503718596931853)}
+  'a_zimbo base1' -> {'bright': np.float64(0.20137364801585247), 'warm': np.float64(0.1458222751202548)}
+  'acoustic' -> {'bright': np.float64(0.2286832642672919), 'warm': np.float64(0.24605638199726595)}
+  'acoustic guitar cleanup and tone boost' -> {'bright': np.float64(0.05292337045400629), 'warm': np.float64(0.019254133803957685)}
+  'add air' -> {'bright': np.float64(0.1569095107208266), 'warm': np.float64(0.2539027596224038)}

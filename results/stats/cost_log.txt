@@ -1,0 +1,12 @@
+COST LOG (from receipts; includes retries and failed attempts)
+
+  anthropic/claude-haiku-4.5             calls=  334 in=   199122 out=    54859 $0.473
+  anthropic/claude-opus-4.8              calls=  132 in=        0 out=        0 $0.000
+  deepseek/deepseek-v4-flash             calls= 1821 in=   187735 out=    59931 $0.030
+  google/gemini-3.5-flash                calls= 2286 in=   323728 out=   554242 $5.474
+  openai/gpt-5.4-mini                    calls=  334 in=   179446 out=    44459 $0.335
+  openai/gpt-5.5                         calls=  132 in=        0 out=        0 $0.000
+  qwen/qwen3-235b-a22b-2507              calls= 1092 in=   193918 out=    48194 $0.044
+  z-ai/glm-4.7-flash                     calls= 1096 in=   183993 out=    51513 $0.032
+
+  TOTAL ACTUAL SPEND: $6.39

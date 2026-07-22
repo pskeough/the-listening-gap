@@ -1,0 +1,35 @@
+MEMORIZATION PROBE — Stage 8
+ground truth (TRAIN): warm low-shelf mean +0.15 dB, high-shelf mean -2.77 dB
+
+[openai/gpt-5.4-mini]
+  Q1_structural: awareness-signal=yes (read raw)
+  Q2_verbatim: declined
+  Q3_statistical: declined
+
+[anthropic/claude-haiku-4.5]
+  Q1_structural: awareness-signal=yes (read raw)
+  Q2_verbatim: declined
+  Q3_statistical: declined
+
+[google/gemini-3.5-flash]
+  Q1_structural: awareness-signal=yes (read raw)
+  Q2_verbatim: declined
+  Q3_statistical: declined
+
+[deepseek/deepseek-v4-flash]
+  Q1_structural: awareness-signal=yes (read raw)
+  Q2_verbatim: declined
+  Q3_statistical: declined
+
+[qwen/qwen3-235b-a22b-2507]
+  Q1_structural: awareness-signal=yes (read raw)
+  Q2_verbatim: declined
+  Q3_statistical: declined
+
+[z-ai/glm-4.7-flash]
+  Q1_structural: awareness-signal=yes (read raw)
+  Q2_verbatim: declined
+  Q3_statistical: declined
+
+AGGREGATE: verbatim recall 0/6 models; statistical recall 0/6 models.
+Interpretation per the pre-registered guide in this script's docstring.

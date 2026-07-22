@@ -1,0 +1,11 @@
+HARNESS INTERPRETATION — Stage 5
+
+1. Every API interaction (success, invalid parse, HTTP error) is a line
+   in results/receipts/calls.jsonl; the success rate above is computable
+   from receipts alone.
+2. Failed cells are REPORTED here and excluded from arm files — the
+   metrics stage must state resulting cell Ns per model (no silent N
+   shrinkage).
+3. Cost: compute from receipts' usage fields x D-022 pricing snapshot;
+   write to results/stats/cost_log.txt at analysis time (retries included
+   by construction because every receipt line carries usage).

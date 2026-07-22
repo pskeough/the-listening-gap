@@ -1,0 +1,41 @@
+AUDIT INTERPRETATION — Stage 1 (companion to audit_results.txt)
+
+1. Integrity: the audited file is byte-identical to the provenanced Wayback
+   artifact (SHA-256 match), so all numbers below are anchored to a stable,
+   citable source.
+
+2. Usable N: 1519 entries survive the fixed a-priori funnel (from 1700
+   raw rows). The dominant single loss is the 'test' junk descriptor. The 2-SD
+   outlier filter is NOT applied here — it is a fitted statistic and will be
+   computed on TRAIN only (design §5), so the final analysis N will be
+   slightly smaller and split-dependent.
+
+3. Shape: the distribution is two-giants-plus-long-tail. warm (532) and
+   bright (504) are the only descriptors above the 20-entry floor;
+   together they hold 68% of usable data. This CONFIRMS the
+   preliminary finding in DECISION_LOG D-018 on the full formal funnel.
+
+4. Consequences (per pre-declared design rules, not post-hoc choices):
+   a. §7 power fallback AUTO-TRIGGERS: primary analysis = entry-level
+      mixed-effects with descriptor as a grouping factor; descriptor-paired
+      Wilcoxon is demoted to a warm/bright-only descriptive.
+   b. The paper's confirmatory core is deep-distributional on warm + bright
+      (both have enough entries for stable held-out human distributions,
+      ~20%+ splits give ~100 test curves each).
+   c. The below-floor long tail (483 entries) becomes the unseen/rare-
+      descriptor generalization set — scored in aggregate, never per-descriptor.
+   d. Arm D/F viability gate is IN TENSION (passes total-N, fails
+      descriptor-count). Resolution is Patrick's call before freeze —
+      DECISION_LOG D-018 lists the two options.
+
+5. Data-quality flags for Stage 2 decisions:
+   - Duplicate entries (same descriptor+IP+params): see audit_results §4 —
+     decide drop/keep in DECISION_LOG before splitting.
+   - Suspicious descriptor strings: see audit_results §5 — blocklist additions
+     require a DECISION_LOG entry.
+   - Metadata sparsity: see audit_results §6 — decide which metadata fields
+     are reliable enough to include in arm prompts.
+
+Nothing in this audit fitted a statistic to the outcome data; every rule was
+fixed a-priori. This file is the receipt behind every dataset claim in the
+manuscript.

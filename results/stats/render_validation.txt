@@ -1,0 +1,34 @@
+RENDER VALIDATION — Stage 3 measuring-instrument self-test
+fs = 48000 Hz | grid = 256 log points 20..20000 Hz | shelf Q = 0.71
+
+[FLAT]
+  expected : max |dB| over grid < 0.01
+  actual   : max |dB| = 0.000000
+  PASS
+
+[PEAK @1kHz]
+  expected : grid point nearest 1 kHz (988.9 Hz) within 0.05 dB of +6; 20 Hz and 20 kHz within 0.1 dB of 0
+  actual   : peak = 5.9967 dB; 20 Hz = 0.0026 dB; 20 kHz = 0.0020 dB
+  PASS
+
+[LOW SHELF +6@100Hz]
+  expected : 20 Hz within 0.3 dB of +6; 10 kHz within 0.1 dB of 0
+  actual   : 20 Hz = 5.9916 dB; 10 kHz = -0.0000 dB
+  PASS
+
+[HIGH SHELF -6@10kHz]
+  expected : 20 kHz within 0.5 dB of -6; 100 Hz within 0.1 dB of 0
+  actual   : 20 kHz = -5.9905 dB; 100 Hz = 0.0000 dB
+  PASS
+
+[INVERSE CANCELLATION]
+  expected : max |sum of +6/-6 dB curves| < 0.05
+  actual   : max |dB| = 4.16e-15
+  PASS
+
+[GRID SANITY]
+  expected : 256 points, strictly increasing, 20.0 .. 20000.0 (rel tol 1e-6)
+  actual   : n = 256; increasing = True; first = 20.0; last = 20000.0
+  PASS
+
+ALL PASS

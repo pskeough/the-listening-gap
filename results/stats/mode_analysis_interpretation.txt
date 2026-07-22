@@ -1,0 +1,13 @@
+MODE ANALYSIS INTERPRETATION — Stage 10
+
+A. If model school-shares mismatch human shares (significant GOF),
+   models do not reproduce the population mixture. WHICH mode they
+   concentrate in is the doctrine-vs-practice question: concentration
+   in a minority 'textbook' school implies knowledge from written
+   doctrine rather than behavioral practice.
+B. Context-pull near 1.0 for C_AGG with lower values for C implies
+   models defer to authoritative-looking aggregates more than to
+   noisy individual examples; negative or >1 values flag overshoot.
+C. Systematic signed band errors show where model priors deviate
+   from practiced consensus (e.g. over-boosted bass on 'warm').
+All reference structures TRAIN-fitted; eval curves not read here.

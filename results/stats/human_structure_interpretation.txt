@@ -1,0 +1,14 @@
+HUMAN STRUCTURE INTERPRETATION — Stage 9
+
+A. Best-k by BIC: {'warm': 3, 'bright': 4}. If k>1 for a descriptor, the human
+   'consensus' is a mixture and the centroid is a compromise between
+   schools — this must be reported alongside the C_AGG/centroid arms
+   as a self-identified validity bound (a mean of modes may match no
+   individual school). If k=1, the centroid interpretation stands.
+B. Expertise contrasts are conditional on the messy self-reported
+   field (~half blank); treat as exploratory descriptives.
+C. Context shift vs within-group spread: a shift comparable to the
+   spread means descriptor meaning is context-dependent at the same
+   order as individual disagreement — relevant to the app's
+   one-curve-per-descriptor assumption.
+All computed on TRAIN only; eval remains untouched outside Stage 6.

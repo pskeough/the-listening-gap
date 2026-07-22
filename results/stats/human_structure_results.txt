@@ -1,0 +1,20 @@
+HUMAN STRUCTURE — Stage 9 (TRAIN only, n=817)
+
+A. MULTIMODALITY (GMM, BIC selection, PCA-10 on rendered curves):
+  [warm] n=419  BIC: k=1:33,281  k=2:31,041  k=3:29,197  k=4:29,376  -> best k=3
+    mode 0: n=68 (16%)  low-band avg +3.3 dB, high-band avg -2.9 dB
+    mode 1: n=221 (53%)  low-band avg +0.0 dB, high-band avg -3.1 dB
+    mode 2: n=130 (31%)  low-band avg +1.2 dB, high-band avg -0.3 dB
+  [bright] n=398  BIC: k=1:31,565  k=2:30,470  k=3:28,716  k=4:28,177  -> best k=4
+    mode 0: n=71 (18%)  low-band avg -2.9 dB, high-band avg +5.2 dB
+    mode 1: n=101 (25%)  low-band avg -0.4 dB, high-band avg +5.4 dB
+    mode 2: n=120 (30%)  low-band avg -6.3 dB, high-band avg +4.4 dB
+    mode 3: n=106 (27%)  low-band avg -0.3 dB, high-band avg +4.5 dB
+
+B. EXPERTISE (novice <=2 yrs vs experienced >=5 yrs; parse rule in docstring):
+  [warm] unparsed/blank: 258  |  novice: n=41 spread=5.83 dB  |  experienced: n=82 spread=4.14 dB  |  consensus shift novice->experienced: 2.18 dB
+  [bright] unparsed/blank: 249  |  novice: n=35 spread=5.27 dB  |  experienced: n=76 spread=4.57 dB  |  consensus shift novice->experienced: 1.33 dB
+
+C. CONTEXT (guitar vs full-mix stimulus; classify rule in docstring):
+  [warm]  |  guitar: n=48 spread=8.21 dB  |  mix_stimulus: n=159 spread=5.29 dB  |  context shift: 2.62 dB
+  [bright]  |  guitar: n=57 spread=7.57 dB  |  mix_stimulus: n=170 spread=5.29 dB  |  context shift: 2.76 dB
