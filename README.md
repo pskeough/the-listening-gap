@@ -6,7 +6,7 @@ into 5-band parametric EQ curves, graded against SAFE-DB, a crowdsourced corpus 
 audio-engineer settings collected in-plugin a decade before LLMs could have shaped it.
 No LLM judge anywhere: the gold is numeric human behavior in rendered frequency-response space.
 
-📄 **Working paper:** [`paper/the_listening_gap_draft.md`](paper/the_listening_gap_draft.md) · Patrick S. Keough · draft v1.0
+📄 **Working paper:** [`paper/latex/main.pdf`](paper/latex/main.pdf) (PDF) · [markdown source](paper/the_listening_gap_draft.md) · Patrick S. Keough · draft v1.0
 
 ## Headline findings
 
