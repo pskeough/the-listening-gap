@@ -20,5 +20,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Applies to everything in scripts/. The data, derived tables and manuscript
+Applies to the code in this repository. The data, derived tables and manuscript
 sources carry a separate licence; see LICENSE-DATA.
