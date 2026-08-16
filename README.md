@@ -55,4 +55,4 @@ traces to a receipt in `results/stats/` (see the trace table).
 
 ## License
 
-Code: Apache-2.0 · Paper text and figures: CC BY 4.0
+Code: MIT ([LICENSE](LICENSE)) · Paper text, figures and derived data: CC BY-NC-ND 4.0 ([LICENSE-DATA](LICENSE-DATA))
