@@ -1,0 +1,63 @@
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+(CC BY-NC-ND 4.0)
+
+Copyright (c) 2026 Patrick Keough
+
+Applies to: data/, groundtruth/, analysis/, reports/, paper_library/, and the
+manuscript sources and figures in paper_short/ and paper_v2/.
+
+Code in scripts/ is licensed separately under the MIT License; see LICENSE.
+NHANES source data fetched by scripts/01_download_nhanes.sh is US federal
+government work and is in the public domain.
+
+You are free to:
+
+  Share — copy and redistribute the material in any medium or format.
+
+The licensor cannot revoke these freedoms as long as you follow the licence
+terms.
+
+Under the following terms:
+
+  Attribution — You must give appropriate credit, provide a link to the
+  licence, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your
+  use.
+
+  NonCommercial — You may not use the material for commercial purposes.
+
+  NoDerivatives — If you remix, transform, or build upon the material, you may
+  not distribute the modified material.
+
+  No additional restrictions — You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the licence
+  permits.
+
+Notices:
+
+  You do not have to comply with the licence for elements of the material in
+  the public domain or where your use is permitted by an applicable exception
+  or limitation.
+
+  No warranties are given. The licence may not give you all of the permissions
+  necessary for your intended use. For example, other rights such as publicity,
+  privacy, or moral rights may limit how you use the material.
+
+Full licence text: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+--------------------------------------------------------------------------
+
+A use restriction accompanies this licence and is stated as a normative
+condition rather than a legal one.
+
+These 28,800 assessments are unsafe as synthetic epidemiological data, which is
+what the paper's results establish. The corpus is released for auditing,
+replication and method development, and not for training, for synthetic
+prevalence estimation, or for inclusion in any downstream clinical dataset.
+Using it for those purposes would propagate exactly the miscalibration the
+paper documents.
+
+The non-commercial and no-derivatives terms above have force. The rest of that
+restriction does not: no licence we are aware of can distinguish auditing from
+training as downstream uses, and we would rather say so than imply an
+enforceability the document does not have.
